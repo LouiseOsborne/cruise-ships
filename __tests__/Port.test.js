@@ -4,11 +4,9 @@ const Port = require('../src/Port.js');
 describe('Port', () => {
     describe('with ports and ships', () => {
     let port;
-    let ship;
 
         beforeEach(() => {
             port = new Port('Dover');
-            ship = {};
         });
 
         it('can be instantiated', () => {
@@ -20,14 +18,15 @@ describe('Port', () => {
         });
 
         it('can add a ship', () => {
+            const ship = jest.fn();
             port.addShip(ship);
     
             expect(port.ships).toContain(ship);
         });
 
         it('can remove a ship', () => {
-            const titanic = {};
-            const queenMary = {};
+            const titanic = jest.fn();
+            const queenMary = jest.fn();
     
             port.addShip(titanic);
             port.addShip(queenMary);
