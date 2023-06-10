@@ -2,7 +2,7 @@
 const Ship = require('../src/Ship.js');
 
 describe('Ship', () => {
-    describe('with ports and an itinerary', () => {
+    describe('ship tests', () => {
         let dover;
         let calais;
 
