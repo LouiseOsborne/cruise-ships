@@ -17,7 +17,13 @@ Ships follow an Itinerary and can dock and depart various Ports along the way.
 # Installation
 
 Create a fork and clone the repo. 
-Run npm install to download dependencies. 
+Run `npm install` to download dependencies. 
+
+# Dependencies
+
+Dev Dependencies
+
+[Jest](https://jestjs.io/)
 
 # Usage
 Coming Soon.
